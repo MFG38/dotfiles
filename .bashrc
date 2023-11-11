@@ -1,3 +1,13 @@
+# .bashrc
+# Santtu "MFG38" Pesonen
+
+###########
+# EXPORTS #
+###########
+
+export TERM="xterm"
+export EDITOR="nano"
+
 #################
 # DEFAULT STUFF #
 #################
@@ -38,13 +48,9 @@ ShowInstallerIsoInfo() {
 # ALIASES #
 ###########
 
-# EndeavourOS defaults
-
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 alias la='ls -Alh'
-
-# Personal
 
 alias cp='cp -i'
 alias mv='mv -i'
