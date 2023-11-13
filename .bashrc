@@ -1,12 +1,17 @@
 # .bashrc
 # Santtu "MFG38" Pesonen
 
-###########
-# EXPORTS #
-###########
+#############
+# VARIABLES #
+#############
+
+HISTSIZE=1000
+HISTFILESIZE=2000
+HISTCONTROL=ignoredups:erasedups
 
 export TERM="xterm"
 export EDITOR="nano"
+export VISUAL="codium"
 
 #################
 # DEFAULT STUFF #
@@ -48,15 +53,21 @@ ShowInstallerIsoInfo() {
 # ALIASES #
 ###########
 
-alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
-alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
-alias la='ls -Alh'
+alias vim='nvim'
+
+alias la='ls -A'
+alias ll='ls -Alh'
+
+alias ..='cd ..'
+alias ...='cd ../..'
 
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias syncrepos='sudo pacman -Sy'
 alias sysupdate='sudo pacman -Syu'
+alias doihave='pacman -Q | grep'
 
 #################
 # MORE DEFAULTS #
