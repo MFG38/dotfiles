@@ -10,7 +10,7 @@ HISTFILESIZE=2000
 HISTCONTROL=ignoredups:erasedups
 
 export TERM="xterm"
-export EDITOR="nano"
+export EDITOR="nvim"
 export VISUAL="codium"
 
 #################
