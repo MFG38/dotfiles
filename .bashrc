@@ -1,9 +1,9 @@
 # .bashrc
 # Santtu "MFG38" Pesonen
 
-#############
-# VARIABLES #
-#############
+##################
+# VARIABLES ETC. #
+##################
 
 HISTSIZE=1000
 HISTFILESIZE=2000
@@ -12,6 +12,8 @@ HISTCONTROL=ignoredups:erasedups
 export TERM="xterm"
 export EDITOR="nvim"
 export VISUAL="codium"
+
+bind 'set completion-ignore-case on'
 
 #################
 # DEFAULT STUFF #
