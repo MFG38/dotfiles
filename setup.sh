@@ -11,8 +11,7 @@ case $CHOICE in
 		sudo pacman -S kitty thunderbird neovim p7zip
 		yay -S brave-bin
 		cp .bashrc $HOME/.bashrc
-		cp .config/kitty/* $HOME/.config/kitty/*
-		cp .config/nvim/* $HOME/.config/nvim/*
+		cp -r .config/* $HOME/.config/*
 		;;
 	2)
 		sudo pacman -S github-cli
@@ -23,7 +22,7 @@ case $CHOICE in
 		yay -S proton-ge-custom-bin
 		;;
 	4)
-		sudo pacman -S lolcat
+		sudo pacman -S ncdu trash-cli lolcat
 		;;
 esac
 
