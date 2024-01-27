@@ -24,7 +24,6 @@ case $CHOICE in
 		;;
 	4)
 		sudo pacman -S lolcat
-		curl -sS https://starship.rs/install.sh | sh
 		;;
 esac
 
