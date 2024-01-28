@@ -8,7 +8,7 @@ read CHOICE
 
 case $CHOICE in
 	1)
-		sudo pacman -S kitty thunderbird neovim p7zip
+		sudo pacman -S kitty thunderbird neovim p7zip timeshift
 		yay -S brave-bin
 		cp .bashrc $HOME/.bashrc
 		cp -r .config/* $HOME/.config/*
