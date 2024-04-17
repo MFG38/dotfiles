@@ -12,6 +12,7 @@ case $CHOICE in
 		yay -S brave-bin
 		cp .bashrc $HOME/.bashrc
 		cp -r .config/* $HOME/.config/*
+		cp -r .fonts/* $HOME/.fonts/*
 		;;
 	2)
 		sudo pacman -S github-cli
@@ -25,4 +26,3 @@ case $CHOICE in
 		sudo pacman -S ncdu trash-cli lolcat
 		;;
 esac
-
