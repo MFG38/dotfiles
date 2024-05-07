@@ -72,6 +72,12 @@ alias sysupdate='sudo pacman -Syu'
 alias upcheck='sudo pacman -Sy && pacman -Qu'
 alias doihave='pacman -Q | grep'
 
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gs='git status'
+alias gu='git pull'
+
 #################
 # MORE DEFAULTS #
 #################
