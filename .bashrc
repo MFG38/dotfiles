@@ -9,6 +9,8 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 HISTCONTROL=ignoredups:erasedups
 
+PATH=$PATH:~/.local/bin
+
 export TERM="xterm"
 export EDITOR="nvim"
 export VISUAL="codium"
