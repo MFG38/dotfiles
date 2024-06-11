@@ -10,6 +10,7 @@ HISTFILESIZE=2000
 HISTCONTROL=ignoredups:erasedups
 
 PATH=$PATH:~/.local/bin
+PATH=$PATH:~/.local/share/colette
 
 export TERM="xterm"
 export EDITOR="nvim"
@@ -58,7 +59,6 @@ ShowInstallerIsoInfo() {
 ###########
 
 alias vim='nvim'
-alias colette='cd ~/.local/share/colette && ./colette'
 
 alias la='ls -A'
 alias ll='ls -Alh'
