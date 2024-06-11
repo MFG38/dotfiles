@@ -5,6 +5,8 @@
 
 call plug#begin()
 Plug 'dracula/vim'
+Plug 'williamboman/mason.nvim'
+Plug 'nvim-lualine/lualine.nvim'
 call plug#end()
 
 """ Basic settings
@@ -26,4 +28,14 @@ syntax on
 """ Set color scheme
 
 colorscheme dracula
+
+""" Plugin configs
+
+lua << EOF
+require("mason").setup()
+require("lualine").setup {
+	options = {
+		theme = 'dracula'
+	}
+}
 
