@@ -58,6 +58,7 @@ ShowInstallerIsoInfo() {
 ###########
 
 alias vim='nvim'
+alias colette='cd ~/.local/share/colette && ./colette'
 
 alias la='ls -A'
 alias ll='ls -Alh'
