@@ -1,0 +1,4 @@
+autoremove_old_entries = true
+enable_reminders = true
+reminder_msg_color = "PURPLE"
+task_due_soon_color = "CYAN"
