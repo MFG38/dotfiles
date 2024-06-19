@@ -6,6 +6,8 @@
 call plug#begin()
 Plug 'dracula/vim'
 Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 call plug#end()
 
@@ -33,6 +35,7 @@ colorscheme dracula
 
 lua << EOF
 require("mason").setup()
+require("mason-lspconfig").setup()
 require("lualine").setup {
 	options = {
 		theme = 'dracula'
