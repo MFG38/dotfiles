@@ -31,6 +31,15 @@ bind 'set completion-ignore-case on'
 
 [[ -f ~/.welcome_screen ]] && . ~/.welcome_screen
 
+[[ "$(whoami)" = "root" ]] && return
+
+[[ -z "$FUNCNEST" ]] && export FUNCNEST=100          # limits recursive functions, see 'man bash'
+
+## Use the up and down arrow keys for finding a command in history
+## (you can write some initial letters of the command first).
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
+
 _set_liveuser_PS1() {
     PS1='[\u@\h \W]\$ '
     if [ "$(whoami)" = "liveuser" ] ; then
@@ -78,21 +87,9 @@ alias doihave='pacman -Q | grep'
 alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
+alias gr='git rm'
 alias gs='git status'
 alias gu='git pull'
-
-#################
-# MORE DEFAULTS #
-#################
-
-[[ "$(whoami)" = "root" ]] && return
-
-[[ -z "$FUNCNEST" ]] && export FUNCNEST=100          # limits recursive functions, see 'man bash'
-
-## Use the up and down arrow keys for finding a command in history
-## (you can write some initial letters of the command first).
-bind '"\e[A":history-search-backward'
-bind '"\e[B":history-search-forward'
 
 ###########
 # AUTORUN #
