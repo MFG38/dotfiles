@@ -9,6 +9,7 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'yamatsum/nvim-cursorline'
 call plug#end()
 
 """ Basic settings
@@ -41,4 +42,5 @@ require("lualine").setup {
 		theme = 'dracula'
 	}
 }
+require("nvim-cursorline").setup()
 

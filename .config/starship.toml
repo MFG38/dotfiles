@@ -1,12 +1,15 @@
 # starship.toml
 # Santtu "MFG38" Pesonen
 
+[battery]
+disabled = true
+
 [cmd_duration]
 disabled = true
 
 [directory]
 format = '[$path]($style) '
 truncation_length = 3
-truncation_symbol = '-/'
+truncation_symbol = '.../'
 truncate_to_repo = false
 
