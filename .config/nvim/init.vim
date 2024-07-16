@@ -37,6 +37,9 @@ colorscheme dracula
 lua << EOF
 require("mason").setup()
 require("mason-lspconfig").setup()
+require("lspconfig").pylsp.setup {}
+require("lspconfig").clangd.setup {}
+
 require("lualine").setup {
 	options = {
 		theme = 'dracula'
