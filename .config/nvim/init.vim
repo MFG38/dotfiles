@@ -10,13 +10,18 @@ Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'yamatsum/nvim-cursorline'
+Plug 'crispgm/nvim-tabline'
 call plug#end()
 
 """ Basic settings
 
+set title
+set showtabline=2
+
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set expandtab
 
 set incsearch
 set hlsearch
@@ -46,4 +51,5 @@ require("lualine").setup {
 	}
 }
 require("nvim-cursorline").setup()
+require("tabline").setup({})
 
