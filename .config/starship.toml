@@ -9,7 +9,17 @@ disabled = true
 
 [directory]
 format = '[$path]($style) '
+style = 'bold green'
 truncation_length = 3
 truncation_symbol = '.../'
 truncate_to_repo = false
+
+[git_status]
+style = 'bold yellow'
+
+[username]
+show_always = true
+format = '[$user]($style): '
+style_user = 'bold white'
+style_root = 'bold green'
 
