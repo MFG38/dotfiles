@@ -81,6 +81,7 @@ alias rm='rm -i'
 
 alias syncrepos='sudo pacman -Sy'
 alias sysupdate='sudo pacman -Syu'
+alias yayupdate='yay -Syu'
 alias upcheck='sudo pacman -Sy && pacman -Qu'
 alias doihave='pacman -Q | grep'
 
