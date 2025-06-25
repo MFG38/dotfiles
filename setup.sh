@@ -10,9 +10,12 @@ case $CHOICE in
 	1)
 		sudo pacman -S kitty thunderbird neovim p7zip timeshift nvidia-prime
 		yay -S brave-bin
+		cp -r .fonts/* $HOME/.local/share/fonts/*
 		cp .bashrc $HOME/.bashrc
-		cp -r .config/* $HOME/.config/*
-		cp -r .fonts/* $HOME/.fonts/*
+		mkdir $HOME/.config/kitty
+		mkdir $HOME/.config/nvim
+		cp -r .config/kitty/* $HOME/.config/kitty/*
+		cp -r .config/nvim/* $HOME/.config/nvim/*
 		;;
 	2)
 		sudo pacman -S github-cli

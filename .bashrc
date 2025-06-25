@@ -9,8 +9,13 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 HISTCONTROL=ignoredups:erasedups
 
-PATH=$PATH:~/.local/bin
-PATH=$PATH:~/.local/share/colette
+if [ -d "~/.local/bin" ]; then
+	PATH=$PATH:~/.local/bin
+fi
+
+if [ -d "~/.local/share/colette" ]; then
+	PATH=$PATH:~/.local/share/colette
+fi
 
 export TERM="xterm"
 export EDITOR="nvim"
