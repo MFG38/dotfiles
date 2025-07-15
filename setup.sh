@@ -14,8 +14,8 @@ case $CHOICE in
 		cp .bashrc $HOME/.bashrc
 		mkdir $HOME/.config/kitty
 		mkdir $HOME/.config/nvim
-		cp -r .config/kitty/* $HOME/.config/kitty/*
-		cp -r .config/nvim/* $HOME/.config/nvim/*
+		cp .config/kitty/* $HOME/.config/kitty/*
+		cp .config/nvim/* $HOME/.config/nvim/*
 		;;
 	2)
 		sudo pacman -S github-cli
