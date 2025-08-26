@@ -3,14 +3,14 @@
 echo "This automated setup utility will install software and"
 echo "copy relevant config files for your system."
 echo "Select software category:"
-echo "1)Essentials    2)Dev Tools    3)Gaming    4)Misc"
+echo "1)Essentials    2)Dev Tools    3)Gaming    4)Misc    5)Starship"
 read CHOICE
 
 case $CHOICE in
 	1)
 		sudo pacman -S kitty thunderbird neovim p7zip timeshift nvidia-prime
 		yay -S brave-bin
-		cp -r .fonts/* $HOME/.local/share/fonts/*
+		cp .fonts/* $HOME/.local/share/fonts/*
 		cp .bashrc $HOME/.bashrc
 		mkdir $HOME/.config/kitty
 		mkdir $HOME/.config/nvim
@@ -27,5 +27,9 @@ case $CHOICE in
 		;;
 	4)
 		sudo pacman -S ncdu trash-cli lolcat
+		;;
+	5)
+		curl -sS https://starship.rs/install.sh | sh
+		cp .config/starship.toml $HOME/.config/starship.toml
 		;;
 esac
