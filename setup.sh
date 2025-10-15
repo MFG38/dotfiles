@@ -12,8 +12,10 @@ case $CHOICE in
 		yay -S brave-bin vesktop
 		cp .fonts/ShareTechMono-Regular.ttf $HOME/.local/share/fonts/ShareTechMono-Regular.ttf
 		cp .bashrc $HOME/.bashrc
+		mkdir $HOME/.config/fastfetch
 		mkdir $HOME/.config/kitty
 		mkdir $HOME/.config/nvim
+		cp -r .config/fastfetch/ $HOME/.config/fastfetch/
 		cp -r .config/kitty/ $HOME/.config/kitty/
 		cp -r .config/nvim/ $HOME/.config/nvim/
 		;;
