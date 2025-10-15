@@ -9,7 +9,7 @@ read CHOICE
 case $CHOICE in
 	1)
 		sudo pacman -S kitty thunderbird neovim p7zip fastfetch timeshift nvidia-prime
-		yay -S brave-bin
+		yay -S brave-bin vesktop
 		cp .fonts/ShareTechMono-Regular.ttf $HOME/.local/share/fonts/ShareTechMono-Regular.ttf
 		cp .bashrc $HOME/.bashrc
 		mkdir $HOME/.config/kitty
@@ -22,7 +22,7 @@ case $CHOICE in
 		yay -S vscodium-bin
 		;;
 	3)
-		sudo pacman -S steam discord
+		sudo pacman -S steam
 		yay -S proton-ge-custom-bin
 		;;
 	4)
