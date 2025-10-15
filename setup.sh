@@ -8,14 +8,14 @@ read CHOICE
 
 case $CHOICE in
 	1)
-		sudo pacman -S kitty thunderbird neovim p7zip timeshift nvidia-prime
+		sudo pacman -S kitty thunderbird neovim p7zip fastfetch timeshift nvidia-prime
 		yay -S brave-bin
-		cp .fonts/* $HOME/.local/share/fonts/*
+		cp .fonts/ShareTechMono-Regular.ttf $HOME/.local/share/fonts/ShareTechMono-Regular.ttf
 		cp .bashrc $HOME/.bashrc
 		mkdir $HOME/.config/kitty
 		mkdir $HOME/.config/nvim
-		cp .config/kitty/* $HOME/.config/kitty/*
-		cp .config/nvim/* $HOME/.config/nvim/*
+		cp -r .config/kitty/ $HOME/.config/kitty/
+		cp -r .config/nvim/ $HOME/.config/nvim/
 		;;
 	2)
 		sudo pacman -S github-cli

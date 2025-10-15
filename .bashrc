@@ -104,4 +104,4 @@ alias gu='git pull'
 ###########
 
 eval "$(starship init bash)"
-neofetch
+fastfetch
