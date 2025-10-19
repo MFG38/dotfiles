@@ -42,8 +42,9 @@ colorscheme dracula
 lua << EOF
 require("mason").setup()
 require("mason-lspconfig").setup()
-require("lspconfig").pylsp.setup {}
-require("lspconfig").clangd.setup {}
+
+vim.lsp.enable('clangd')
+vim.lsp.enable('pylsp')
 
 require("lualine").setup {
 	options = {
