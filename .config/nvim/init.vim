@@ -11,6 +11,8 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'yamatsum/nvim-cursorline'
 Plug 'crispgm/nvim-tabline'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 """ Basic settings
@@ -36,6 +38,10 @@ syntax on
 """ Set color scheme
 
 colorscheme dracula
+
+""" Keybinds
+
+nnoremap <C-f> :Files<Cr>
 
 """ Plugin configs
 
