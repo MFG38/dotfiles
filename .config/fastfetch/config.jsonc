@@ -8,7 +8,7 @@
         "source": "endeavouros",
         "padding": {
             "top": 2,
-            "left": 2,
+            "left": 4,
         }
     },
     "display": {
@@ -17,7 +17,7 @@
     "modules": [
         {
             "type": "custom",
-            "format": "\u001b[35m========================[ SYSTEM INFORMATION ]========================"
+            "format": "\u001b[30m\u001b[42m                        [ SYSTEM INFORMATION ]                        "
         },
         "break",
         {
