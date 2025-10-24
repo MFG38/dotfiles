@@ -42,6 +42,7 @@ colorscheme dracula
 """ Keybinds
 
 nnoremap <C-f> :Files<Cr>
+nnoremap <C-m> :Mason<Cr>
 
 """ Plugin configs
 
