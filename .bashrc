@@ -19,7 +19,6 @@ fi
 
 export TERM="xterm"
 export EDITOR="nvim"
-export VISUAL="codium"
 
 bind 'set completion-ignore-case on'
 
@@ -105,3 +104,4 @@ alias gu='git pull'
 
 eval "$(starship init bash)"
 fastfetch
+
