@@ -43,6 +43,7 @@ colorscheme dracula
 
 nnoremap <C-f> :Files<Cr>
 nnoremap <C-m> :Mason<Cr>
+nnoremap <C-u> :PlugUpdate<Cr>
 
 """ Plugin configs
 
