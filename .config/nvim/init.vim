@@ -13,6 +13,7 @@ Plug 'yamatsum/nvim-cursorline'
 Plug 'crispgm/nvim-tabline'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'rachartier/tiny-inline-diagnostic.nvim'
 call plug#end()
 
 """ Basic settings
@@ -61,4 +62,6 @@ require("lualine").setup {
 }
 require("nvim-cursorline").setup()
 require("tabline").setup({})
-
+require("tiny-inline-diagnostic").setup({
+    preset = "powerline"
+})
