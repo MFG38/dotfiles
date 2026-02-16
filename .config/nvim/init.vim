@@ -8,6 +8,7 @@ Plug 'dracula/vim'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
+Plug 'saghen/blink.cmp', { 'tag': 'v1.*' }
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'yamatsum/nvim-cursorline'
 Plug 'crispgm/nvim-tabline'
@@ -54,6 +55,12 @@ require("mason-lspconfig").setup()
 
 vim.lsp.enable('clangd')
 vim.lsp.enable('pylsp')
+
+require("blink.cmp").setup({
+    keymap = { preset = "default" },
+    documentation = { auto_show = false },
+    fuzzy = { implementation = "lua" }
+})
 
 require("lualine").setup {
 	options = {
