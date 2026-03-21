@@ -59,7 +59,10 @@ vim.lsp.enable('pylsp')
 require("blink.cmp").setup({
     keymap = { preset = "default" },
     documentation = { auto_show = false },
-    fuzzy = { implementation = "lua" }
+    fuzzy = { implementation = "lua" },
+    sources = {
+        default = { 'lsp', 'path', 'snippets'},
+    }
 })
 
 require("lualine").setup {
