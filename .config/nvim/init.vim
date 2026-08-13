@@ -65,11 +65,11 @@ require("blink.cmp").setup({
     }
 })
 
-require("lualine").setup {
+require("lualine").setup({
 	options = {
 		theme = 'dracula'
 	}
-}
+})
 require("nvim-cursorline").setup()
 require("tabline").setup({})
 require("tiny-inline-diagnostic").setup({
