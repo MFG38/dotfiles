@@ -9,19 +9,20 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 HISTCONTROL=ignoredups:erasedups
 
-if [ -d "~/.local/bin" ]; then
-	export PATH=$PATH:~/.local/bin
+if [ -d "$HOME/.local/bin" ]; then
+	export PATH=$PATH:$HOME/.local/bin
 fi
 
-if [ -d "~/.local/share/colette" ]; then
-	export PATH=$PATH:~/.local/share/colette
+if [ -d "$HOME/.local/share/colette" ]; then
+	export PATH=$PATH:$HOME/.local/share/colette
 fi
 
-export TERM="xterm"
 export EDITOR="nvim"
 
 bind 'set completion-ignore-case on'
 bind 'set echo-control-characters off'
+
+shopt -s histappend
 
 #################
 # DEFAULT STUFF #
